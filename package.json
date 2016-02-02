@@ -1,6 +1,6 @@
 {
   "name": "count-digits",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Count the digits in a number (in any base)",
   "main": "index.js",
   "scripts": {
