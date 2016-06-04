@@ -21,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/j-/count-digits/issues"
   },
-  "homepage": "https://github.com/j-/count-digits#readme"
+  "homepage": "https://github.com/j-/count-digits#readme",
+  "devDependencies": {
+    "ava": "^0.15.1"
+  },
+  "files": [
+    "index.js"
+  ]
 }
