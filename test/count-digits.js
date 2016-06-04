@@ -61,3 +61,17 @@ test('Can count numbers less than 100000000000000', (t) => {
 	// to cause invalid results at this point
 	t.skip.is(countDigits(1e15), 16, '1e16');
 });
+
+test('Can count negative numbers', (t) => {
+	t.is(countDigits(-0), 0);
+	t.is(countDigits(-1), 1);
+	t.is(countDigits(-9), 1);
+	t.is(countDigits(-10), 2);
+	t.is(countDigits(-99), 2);
+	t.is(countDigits(-100), 3);
+	t.is(countDigits(-999), 3);
+	t.is(countDigits(-1000), 4);
+	t.is(countDigits(-9999), 4);
+	t.is(countDigits(-10000), 5);
+	t.is(countDigits(-99999), 5);
+});
