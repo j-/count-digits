@@ -149,3 +149,12 @@ test('Can count base 16 numbers', (t) => {
 	t.is(countDigits(0x10000, 16), 5, '10000');
 	t.is(countDigits(0xfffff, 16), 5, 'fffff');
 });
+
+test('Ignores fractional values', (t) => {
+	t.is(countDigits(0.999), 0);
+	t.is(countDigits(-0.999), 0);
+	t.is(countDigits(99.999), 2);
+	t.is(countDigits(-99.999), 2);
+	t.is(countDigits(1000000.0000001), 7);
+	t.is(countDigits(Math.PI), 1);
+});
