@@ -75,3 +75,17 @@ test('Can count negative numbers', (t) => {
 	t.is(countDigits(-10000), 5);
 	t.is(countDigits(-99999), 5);
 });
+
+test('Can count negative numbers', (t) => {
+	t.is(countDigits(-0), 0);
+	t.is(countDigits(-1), 1);
+	t.is(countDigits(-9), 1);
+	t.is(countDigits(-10), 2);
+	t.is(countDigits(-99), 2);
+	t.is(countDigits(-100), 3);
+	t.is(countDigits(-999), 3);
+	t.is(countDigits(-1000), 4);
+	t.is(countDigits(-9999), 4);
+	t.is(countDigits(-10000), 5);
+	t.is(countDigits(-99999), 5);
+});
