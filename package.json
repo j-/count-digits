@@ -15,7 +15,9 @@
     "count",
     "digits",
     "base",
-    "radix"
+    "radix",
+    "number",
+    "integer"
   ],
   "author": "Jamie Hoeks <j@skeoh.com>",
   "license": "MIT",
