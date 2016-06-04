@@ -89,3 +89,12 @@ test('Can count negative numbers', (t) => {
 	t.is(countDigits(-10000), 5);
 	t.is(countDigits(-99999), 5);
 });
+
+test('Can count infinity', (t) => {
+	t.is(countDigits(Infinity), Infinity);
+	t.is(countDigits(-Infinity), Infinity);
+});
+
+test('Does not count NaN', (t) => {
+	t.truthy(isNaN(countDigits(NaN)));
+});
